@@ -54,7 +54,7 @@
     cd /path/to/camvid_sequence_root/
     bash ./camvid_decode.sh
     ```
-6. Replace the `camvid_root` and `camvid_sequence_root` variables in ``./generate_compressed_dataset_camvid.py`. Run:
+6. Replace the `camvid_root` and `camvid_sequence_root` variables in `./generate_compressed_dataset_camvid.py`. Run:
     ```
     python ./generate_compressed_dataset_camvid.py
     ```
@@ -95,12 +95,12 @@
     ┣ ┣ test
     ┣ ┣ train
     ┣ ┗ val
-    ┣ leftImg8bit_sequence
-    ┣ ┣ test
-    ┣ ┣ train
-    ┣ ┗ val
+    ┗ leftImg8bit_sequence
+      ┣ test
+      ┣ train
+      ┗ val
     ```
-4. Replace the `cityscapes_root` in ``./generate_compressed_dataset_cityscapes.py`. Run:
+4. Replace the `cityscapes_root` in `./generate_compressed_dataset_cityscapes.py`. Run:
     ```
     python ./generate_compressed_dataset_cityscapes.py
     ```
@@ -108,15 +108,15 @@
     ```
     cityscapes_root
     ┣ ...
-    ┣ leftImg8bit_sequence
-    ┣ ┣ 5M-GOP12
-    ┣ ┣ ┣ decoded_GOP12_dist_0
-    ┣ ┣ ...
-    ┣ ┣ ┣ frames
-    ┣ ┣ ┣ MVmap_GOP12_dist_0
-    ┣ ┣ ...
-    ┣ ┣ ┗ MVmap_GOP12_dist_11
-    ┣ ┣ test
-    ┣ ┣ train
-    ┣ ┗ val
+    ┗ leftImg8bit_sequence
+      ┣ 5M-GOP12
+      ┣ ┣ decoded_GOP12_dist_0
+      ┣ ...
+      ┣ ┣ frames
+      ┣ ┣ MVmap_GOP12_dist_0
+      ┣ ...
+      ┣ ┗ MVmap_GOP12_dist_11
+      ┣ test
+      ┣ train
+      ┗ val
     ```
