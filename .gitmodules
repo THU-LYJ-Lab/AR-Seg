@@ -1,0 +1,6 @@
+[submodule "pre-process/libde265"]
+	path = pre-process/libde265
+	url = https://github.com/AlbertHuyb/libde265-MV.git
+[submodule "pre-process/x265"]
+	path = pre-process/x265
+	url = https://github.com/videolan/x265.git
