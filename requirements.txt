@@ -1,0 +1,8 @@
+tqdm
+click
+numpy 
+argparse
+pillow
+opencv-python==4.5.5.62
+git+https://github.com/zzd1992/Image-Local-Attention.git@master
+

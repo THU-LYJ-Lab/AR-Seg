@@ -5,7 +5,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils import model_zoo
-from torchvision.models.densenet import densenet121, densenet161
+from torchvision.models.densenet import densenet121
 from torchvision.models.squeezenet import squeezenet1_1
 
 

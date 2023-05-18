@@ -20,7 +20,6 @@ import os
 import logging
 import numpy as np
 from tqdm import tqdm
-import timeit
 
 models = {
     'camvid-psp18': lambda: PSPNet(sizes=(1, 2, 3, 6), n_classes=12, psp_size=512, deep_features_size=256, backend='resnet18'),

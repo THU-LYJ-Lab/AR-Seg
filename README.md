@@ -16,6 +16,26 @@ We design a Cross Resolution Feature Fusion (CReFF) module and a Feature Similar
     <img width="80%" src="./static/method.png">
 </p>
 
+
+## Environment
+
+### Create from Conda Config
+
+```
+conda env create -f environment.yml
+conda activate AR-Seg
+```
+
+### Create with Separate Steps
+
+```
+conda create -n AR-Seg python=3.6 
+conda activate AR-Seg
+
+conda install pytorch==1.7.0 torchvision==0.8.0 torchaudio==0.7.0 cudatoolkit=11.0 -c pytorch
+pip install -r requirements.txt
+```
+
 ## Dataset & Pre-processing
 
 Please refer to the [documentation](./pre-process/README.md).
