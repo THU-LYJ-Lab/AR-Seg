@@ -141,12 +141,13 @@ If you want to train on the Cityscapes dataset, please download the initializati
 ## Citation
 
 ```
-@InProceedings{Yubin_2019_CVPR,
-author = {Yubin, Hu and Yuze, He and Yanghao, Li and Jisheng, Li and Yuxing, Han and Jiangtao, Wen and Yong-jin, Liu},
-title = {Efficient Semantic Segmentation by Altering Resolutions for Compressed Videos},
-booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-month = {June},
-year = {2023}
+@InProceedings{Hu_2023_CVPR,
+    author    = {Hu, Yubin and He, Yuze and Li, Yanghao and Li, Jisheng and Han, Yuxing and Wen, Jiangtao and Liu, Yong-Jin},
+    title     = {Efficient Semantic Segmentation by Altering Resolutions for Compressed Videos},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {22627-22637}
 }
 ```
 
