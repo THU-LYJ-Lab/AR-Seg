@@ -7,10 +7,14 @@ CVPR 2023
 ## Introduction 
 
 AR-Seg is an efficient video semantic segmentation framework for compressed videos. It consists of an HR branch for keyframes and an LR branch for non-keyframes.
-![](./static/diagram.png)
+<p align="center" width="100%">
+    <img width="80%" src="./static/diagram.png">
+</p>
 
 We design a Cross Resolution Feature Fusion (CReFF) module and a Feature Similarity Training (FST) strategy to compensate for the performance drop because of low-resolution. 
-![](./static/method.png)
+<p align="center" width="100%">
+    <img width="80%" src="./static/method.png">
+</p>
 
 ## Dataset & Pre-processing
 
