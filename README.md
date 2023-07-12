@@ -1,5 +1,8 @@
 # AR-Seg
 
+[[`Paper`](https://openaccess.thecvf.com/content/CVPR2023/html/Hu_Efficient_Semantic_Segmentation_by_Altering_Resolutions_for_Compressed_Videos_CVPR_2023_paper.html)] [[`Video`](https://www.youtube.com/watch?v=WN9ok0xd0po)] [[`BibTeX`](#citation)]
+
+
 > Efficient Semantic Segmentation by Altering Resolutions for Compressed Videos <br>
 [Yubin Hu](https://github.com/AlbertHuyb), [Yuze He](https://github.com/hyz317/), Yanghao Li, Jisheng Li, Yuxing Han, Jiangtao Wen, Yong-Jin Liu <br>
 CVPR 2023
