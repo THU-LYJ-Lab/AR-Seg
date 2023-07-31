@@ -216,27 +216,33 @@ for key_dist in range(0,ref_gap):
                     os.system(cmd)
 
                 #############################################################################
-
+                ### color space conversion mentioned in the supp material
+                ### save the individual png into yuv420 format
+                ### will the performance get slightly better if yuv 444?
                 encode_cmd = "ffmpeg -y -i %s"%workspace_dir+"/%03d.png -f rawvideo -pix_fmt yuv420p "+os.path.join(workspace_dir,"proxy.yuv")
                 os.system(encode_cmd)
-
                 #############################################################################
 
                 # for bitrate in [2000]:
                 
                 GOP=(ref_gap)
-
+                ### save the individual
+                ### x265 encoding process, encoded the saved YUV from previous step into a hevc format ( bframes is set to 0 here, keyint is equal to GOP, L)
                 cmd = "%s/x265 --input-res 960x720 --fps %d --rect --amp --input %s/proxy.yuv --bitrate %d --keyint %d --bframes 0 %s/proxy_%d.hevc"%(workspace_dir,encode_fps,workspace_dir,bitrate, GOP, workspace_dir, bitrate)
-
                 os.system(cmd)
 
                 # exit(0)
 
                 ##############################################################################
 
+                ### x265 decoding process, convert hevc bitstreams into a mov, mp4, video statistic, B, P, I frames etc (to calculate motion vectors) 
+                ### -p is preset @ paper table 4 
+                ### -q is the Constant QP rate control @ paper table 4 
+                ### q and p here does't matter caused it is defined during encoding process
                 cmd = "%s/dec265 -q %s/proxy_%d.hevc -p %s/"%(workspace_dir,workspace_dir, bitrate, workspace_dir)
                 os.system(cmd)
-
+                
+                ### x265 decoding process, convert hevc bitstreams into the single PNG image files (lossly)
                 cmd = "ffmpeg -y -i %s/proxy_%d.hevc %s/"%(workspace_dir, bitrate, workspace_dir) + "decoded-%03d.png"
                 os.system(cmd)
 
