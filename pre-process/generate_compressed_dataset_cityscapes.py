@@ -196,7 +196,7 @@ for key_dist in range(0, ref_gap):
                 cmd = "cp %s %s"%(src_path, dst_path)
                 
                 os.system(cmd)
-                import pdb; pdb.set_trace()
+                # import pdb; pdb.set_trace()
 
                 if key_dist != 0:
                     ## Motion Vectors
